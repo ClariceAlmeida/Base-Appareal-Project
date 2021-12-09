@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+}
+
+.conteiner1{
+    background-image: -moz-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-image: -webkit-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-image: url(../images/bg-pattern-desktop.svg) ;
+    background-size: cover;
+    height: 100vh;
+    width: 55vw;
+}
+#photo {
+    background: url(../images/hero-desktop.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 45vw;
+    
+}
+.conteiner {
+    width: calc(100% - 33rem);
+    margin: auto;
+    
+}
+header {
+    padding-top: 6.5rem;
+    margin-bottom: 13rem;
+}
+text {
+    font-size: 5rem;
+}
+#text{
+    margin-bottom: 2.5rem;
+}
+.txt1, 
+.txt2 {
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
+}
+.txt1{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+.txt2 {
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+.txt3 {
+    font-size: 1.6rem;
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    line-height: 2.5rem;
+    width: 43rem;
+    margin-bottom: 5rem;
+}
+#email::-webkit-input-placeholder{
+    color: hsl(0, 36%, 70%);
+    
+}
+#email::-moz-placeholder{
+    color: hsl(0, 36%, 70%);
+   
+}
+#email{   
+    border: none;
+    outline: none;
+    padding: 2rem;
+    background-color: transparent;
+    width: 31rem;
+}
+
+#border {
+    border: 1px solid  hsl(0, 36%, 70%);
+    border-radius: 3rem;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#button {
+    width: 9rem;
+    background-image: -moz-linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) );
+    background-image: -webkit-linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button:hover {
+    box-shadow: -3px 3px  10px hsl(0, 36%, 70%);
+    
+    
+}
+#res{
+    color: hsl(0, 93%, 68%);
+    font-size: 1.4rem;
+    margin-left: 2.3rem;
+    
+}
+#error {
+    margin-right: 1rem;
+    display: none;
+}
+#photo2 {
+    display: none;
+}
+
+
+@media (max-width:1024px ) {
+    html{
+        font-size: 8px;
+    }
+    
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    header{
+        margin-bottom: 6rem;
+    }
+    #photo{
+        display: none;
+    }
+    #photo2{
+        display: block;
+        margin-bottom: 3.5rem;
+    }
+    #photop{
+        width: 100vw;
+        object-fit: cover;
+        height: 20rem;
+    }
+    .conteiner1{
+        width: 100vw;
+    }
+    .conteiner{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    #text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt3{
+        text-align: center;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 425px) {
+    html{
+        font-size: 8px;
+    }
+    
+    header{
+        margin-bottom: 3.5rem;
+    }
+    .conteiner1{
+        width: 100vw;
+    }
+    .conteiner{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #photo {
+        display: none;
+    }
+    #photo2{
+        display: block;
+        margin-bottom: 3.5rem;
+    }
+    #photop{
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
